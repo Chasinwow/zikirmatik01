@@ -1,0 +1,149 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="zikirmatik01.css">
+	<title>Zikirmatik</title>
+	
+</head>
+<body>
+    
+  
+	<h4>Maked By Adv1ce And ChaSyn</h4>
+	<h1>Çok Amaçlı Zikirmatik </h1>	
+	
+	<div id="sayac"  >0</div>
+		<p id="myText" style="display: none;"></p>
+		<div class="button">
+			<button class="btn btn1" onclick="Arttır()">Arttır</button>
+			<button class="btn btn2" onclick="azalt()">Azalt</button>
+			<button class="btn btn3" onclick="sifirla()">Sıfırla</button>					
+			<div class="alt-satir">
+			<button class="btn btn4" onclick="yolla()">eğer vergilenmek istiyosan tıkla</button>	  	  
+			<button class="btn btn5" onclick="abdest()">eğer abdestlenmek istiyorsan tıkla</button>	  	  
+			<button class="btn btn6" onclick="ev()">evlenmek istiyorsan tıkla</button>
+			<button class="btn btn7" onclick="fıkra()">küçük bir fıkra dinlemek ister misin ?</button>
+			<button class="btn btn8" onclick="arsa()">cennetten arsa almak ister misin ?</button>
+			<button class="btn btn9" onclick="akılsağlığı()">Akıl sağlığın yerinde mi ?</button>
+		</div>
+		  </div>
+		  <h2 style="text-align:center; margin-top: 300px;">video izlemek ister misiniz👉👈</h2>
+			<p şd -="myText" style="display: none;"></p>
+	  <div id="randomText" style="font-weight: bold;"></div>
+	<div class="alt-satir">
+	<widget id="myWidget"><iframe src="https://discord.com/widget?id=760166618847379476&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe></widget>
+	<video id="dino" controls style="width: 30%; position: relative; bottom: 150px;" > 
+		<source src="Top 5 Cat.mp4" type="video/mp4">
+	</video>
+	
+	<script>
+		function akılsağlığı(){
+			window.location.href="https://www.youtube.com/watch?v=JcA7V4WF9xc"
+		}
+
+		function gönder(){
+			window.location.href="https://www.instagram.com/p/Cp-Ue3WD776/"
+		}	
+
+		function arsa(){
+			window.location.href="https://www.vatican.va/content/vatican/en.html"
+		}	
+		function fıkra(){
+			window.location.href="https://www.diyanet.gov.tr/tr-TR"
+		}		
+		function ev(){
+			window.location.href="https://www.aile.gov.tr/sss/cocuk-hizmetleri-genel-mudurlugu/evlat-edinme-hizmeti/"
+		}
+		function yolla() {
+			window.location.href = "https://www.akparti.org.tr";}
+			
+		function abdest() {
+			window.location.href = "https://quickabdest.com";}
+            
+		function increment() {
+			
+			
+        }
+							var sayac = 0;
+				const randomText = document.getElementById('randomText');
+			function getRandomWord() {
+		const text = document.getElementById('myText');
+    if (text.style.display === 'none') {
+      			text.style.display = 'block';
+     		const randomIndex = Math.floor(Math.random() * words.length);
+      	text.textContent = `${words[randomIndex]} `;
+    } else {
+      	text.style.display = 'none';
+    }
+	
+		}
+
+		function Arttır() {
+						sayac++;
+			document.getElementById("sayac").innerHTML = sayac;
+            if(sayac>49){
+            document.body.style.backgroundImage = "url('https://lynndove.files.wordpress.com/2015/11/heaven.jpg')";
+            }
+        }
+            
+        
+		
+
+		function azalt() {
+			if (sayac > 0) {
+				sayac--;
+				document.getElementById("sayac").innerHTML = sayac;
+			}
+		}
+
+		function sifirla() {
+			sayac = 0;
+			document.getElementById("sayac").innerHTML = sayac;
+		}
+		
+	</script>
+</form>
+<fieldset>
+	<legend>
+		Anime kızlarına yardım için sihirli kartınızdaki haneleri girer misiniz 👉👈
+	</legend>
+
+
+<table border="1">
+	
+	<tr>
+		<td>Kart üstündeki sihirli isim : </td>
+		<td><input type="text" name="sihirliisim"> </td>
+	</tr>
+	<tr>
+		<td>öndeki 16 haneli sihirli sayılar : </td>
+		<td><input type="text" name="numara"> </td>
+	</tr>
+	<tr>
+		<td>arkada yazan özel 3 numara : </td>
+		<td><input type="text" name="mail" placeholder="özelnumara"> </td>
+	</tr> 
+	
+	<tr>
+		<td>TC Kimlik Numaranız : </td>
+		<td><input type="text" name="tckimlik" placeholder="11 hane olmalıdır."> </td>
+	</tr>
+	
+	<tr>
+		<td>Hangi anime kızlarına yardım etmek istiyorsunuz</td>
+		<td>
+		<label for="ing">Okul formalı</label><input type="checkbox" id="ing" value="ing"><br>
+		<label for="alm">Tatlı anime kzıları</label><input type="checkbox" id="alm" value="alm"><br>
+		<label for="fra">HEPSİ</label><input type="checkbox" id="fra" value="fra">
+		</td>
+	</tr>
+	
+	<tr>
+		<td>Amime kızlarına telefonunuza bankanızdan gelen kodu gönderin : </td>
+		<td><textarea cols="22" rows="7" name="mesaj"></textarea>      </td> <button class="btn btn10" onclick="gönder()">Gönder</button>
+		
+	</tr>
+
+</table>
+
+</fieldset>
+</body>
+</html>

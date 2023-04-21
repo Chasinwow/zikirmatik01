@@ -1,0 +1,136 @@
+.ozel-buton:hover {
+	background-color: #ff0;
+	color: #000;
+}
+
+body {
+    
+    background-image: url("https://i.pinimg.com/550x/c9/5e/88/c95e88ec050b1ec0f35a4c8165b3396c.jpg");
+    background-size: cover;		
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+		h2 {
+            position: relative;
+			bottom: 150px;
+            z-index: 1;
+		}
+
+		#sayac {
+			font-size: 48px;
+			margin-bottom: 30px;
+		}
+
+
+		.button {
+			background: transparent;
+			padding: 10px;
+			font-size: 24px;
+			margin: 20px;
+			border: 2px solid rgba(255, 255, 255, .5);
+			border-radius: 20px;
+			backdrop-filter: blur(10px);
+			transition: color 0.4 linear;
+			
+		}
+		
+		.btn{
+			background: none;
+    border: 2px solid black;
+    font-size: 14px;
+    font-family: "Tahoma", sans-serif;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    min-width: 200px;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.4s linear;
+		}
+		
+		
+		.btn:hover {
+    color: #FFF;
+		}
+		
+
+		.btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+.btn1::before {
+    transform: scaleX(0);
+}
+
+.btn1:hover::before {
+    transform: scaleX(1);
+}
+
+.btn2::before {
+    transform: scaleY(0);
+}
+
+.btn2:hover::before {
+    transform: scaleY(1);
+}
+.btn3::before {
+    transform: scaleX(0);
+}
+
+.btn3:hover::before {
+    transform: scaleX(1);
+}
+
+.btn4::before {
+    transform: scaleY(0);
+}
+
+.btn4:hover::before {
+    transform: scaleY(1);
+}
+.btn5::before {
+    transform: scaleX(0);
+}
+
+.btn5:hover::before {
+    transform: scaleX(1);
+}
+
+.btn6::before {
+    transform: scaleY(0);
+}
+
+.btn6:hover::before {
+    transform: scaleY(1);
+}
+
+.btn7::before{
+    transform: scaleY(0);
+    
+}
+.btn7:hover::before{
+    transform: scaleY(1);
+}
+.btn8::before{
+    transform: scaleY(0);
+}
+.btn8:hover::before{
+    transform: scaleY(1);
+}
+	
+	#myWidget{
+			position: absolute;
+			left: 20px;
+			top: 500px;
+		}
